@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="6dp"
+    android:layout_marginTop="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        >
+
+        <TextView
+            android:id="@+id/postName"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="60dp"
+            android:gravity="clip_vertical|left|bottom"
+            android:text="Sample Name"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            tools:src="@tools:sample/avatars"
+            android:id="@+id/postProfile"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/postImage"
+        app:srcCompat="@drawable/ic_launcher_background"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:elevation="6dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/notification"
+            android:id="@+id/unlike"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/like"
+            android:visibility="invisible"
+            android:id="@+id/liked"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="43dp"
+            android:id="@+id/viewComments"
+            android:padding="3dp"
+            android:src="@drawable/comment"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/save"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:id="@+id/save"/>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/saved"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:id="@+id/saved"
+            android:visibility="gone"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="10 Likes"
+        android:id="@+id/numLikes"
+        android:textStyle="bold"
+        android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Sample Name"
+            android:textStyle="bold"
+            android:id="@+id/smallPostName"
+            android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/postDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Just because you're awake doesn't mean you should stop dreaming.”"
+        android:textColor="@color/black" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="3dp"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+</LinearLayout>

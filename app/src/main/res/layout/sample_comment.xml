@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        tools:src="@tools:sample/avatars"
+        android:id="@+id/commentProfile"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Sample Username"
+        android:layout_marginLeft="8dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/commentUsername"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample Comment"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        android:id="@+id/comment"
+        android:textColor="@color/black"
+        />
+    </LinearLayout>
+
+</LinearLayout>

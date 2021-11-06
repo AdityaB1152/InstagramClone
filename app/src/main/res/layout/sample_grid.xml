@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.theophrast.ui.widget.SquareImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:id="@+id/displayPost"
+        tools:src="@tools:sample/avatars"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>

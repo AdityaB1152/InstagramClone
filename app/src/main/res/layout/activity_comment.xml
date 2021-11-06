@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/commentBar">
+
+        <ImageView
+            android:id="@+id/commentBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Comments"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commentBar"
+        android:layout_above="@+id/commentLinear"
+
+        tools:listitem="@layout/sample_comment">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/commentLinear">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/commentProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/avatar"
+            />
+
+    <EditText
+        android:id="@+id/commentBox"
+        android:layout_width="294dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textPersonName"
+        android:hint="Add a Comment..."/>
+
+        <TextView
+            android:id="@+id/postComment"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Post"
+            android:textColor="@color/blue"
+
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

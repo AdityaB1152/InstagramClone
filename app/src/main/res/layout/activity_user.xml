@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/chatBar">
+
+        <ImageView
+            android:id="@+id/chatBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Chats"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:id="@+id/searchBar"
+        android:layout_below="@+id/chatBar"
+        >
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_background"
+            android:hint="Search"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/chatsearchBox"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"
+            android:padding="8dp"
+            android:id="@+id/chatsearchButton"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBar"
+        android:id="@+id/chatList"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/search_model"/>
+
+
+</RelativeLayout>

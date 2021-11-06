@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Fragments.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/insta"
+                    android:layout_gravity="left"
+                    android:paddingRight="110dp"/>
+                <ImageView
+                android:layout_width="75dp"
+                android:id="@+id/camera"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_gravity="left"
+                android:src="@drawable/camera" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/send"
+                    android:src="@drawable/send" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stories"
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:elevation="6dp"
+        tools:listitem="@layout/sample_story" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/stories"
+            android:layout_above="@id/postlist"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postlist"
+            android:layout_width="match_parent"
+            android:layout_height="621dp"
+            android:layout_below="@id/stories"
+            android:layout_marginTop="0dp"
+            tools:listitem="@layout/sample_post" />
+    </RelativeLayout>
+</FrameLayout>

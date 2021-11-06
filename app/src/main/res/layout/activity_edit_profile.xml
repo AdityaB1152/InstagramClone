@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="?attr/homeAsUpIndicator"
+                app:tint="@color/black"
+                android:id="@+id/back"
+                />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="Edit Profile"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/check"
+                android:layout_gravity="right"
+                android:layout_marginLeft="50dp"
+                app:tint="@color/blue"
+                android:id="@+id/save"/>
+
+        </LinearLayout>
+    </Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/avatar"
+        android:id="@+id/editProfileDP"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Change Photo"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:id="@+id/changephoto"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Name"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:layout_marginRight="15dp"
+         android:layout_marginLeft="15dp"
+        android:id="@+id/editName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Userame"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/editUsername"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Bio"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Description"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+
+</LinearLayout>

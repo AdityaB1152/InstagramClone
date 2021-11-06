@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SearchFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:id="@+id/searchBar"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="?attr/homeAsUpIndicator"
+                    app:tint="@color/black"
+                    android:id="@+id/searchBack"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Search"
+                    android:id="@+id/searchBox"
+                    />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search"
+                    android:padding="8dp"
+                    android:id="@+id/searchButton"/>
+
+            </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchBar"
+            android:id="@+id/userList"
+            android:layout_marginTop="15dp"
+            tools:listitem="@layout/search_model"/>
+
+
+
+    </RelativeLayout>
+</FrameLayout>
