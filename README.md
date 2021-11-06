@@ -14,6 +14,6 @@
 **5. Search and View Other Profiles**  
 **6. Follow and Unfollow Users**  
 **7. Upload and View Stories/Status**
-**8. Chat with Other Users.**
-**9. React to other's messages.**
+**8. Chat with Other Users**
+**9. React to other's messages**
 
