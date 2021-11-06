@@ -1,6 +1,6 @@
-# WhatsappChatApp
+# Instagram Clone
 ## About This Project 
-### Clone of real world Social Media applicationInstagram built on Android Studio and Firebase  
+### Clone of real world Social Media application Instagram built on Android Studio and Firebase  
 **Programming Language Used : _JAVA_**  
 **UI designed using : _XML_**     
 **Database and Storage : _Firebase_**    
